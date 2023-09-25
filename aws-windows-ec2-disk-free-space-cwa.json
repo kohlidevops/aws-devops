@@ -1,0 +1,19 @@
+{
+  "metrics": {
+    "append_dimensions": {
+      "InstanceId": "${aws:InstanceId}"
+    },
+    "metrics_collected": {
+      "LogicalDisk": {
+        "measurement": [
+          "% Free Space"
+        ],
+        "resources": [
+          "*"
+        ],
+        "ignore_missing": true,
+        "metrics_collection_interval": 300
+      }
+    }
+  }
+}
