@@ -1,0 +1,17 @@
+##update and install MySQL##
+
+sudo apt-get update -y
+sudo apt-get upgrade -y
+sudo apt-get install mysql-client -y
+
+## MySQL connection commands
+
+mysql --version  -> To check version
+mysql -h <rds-endpount-url> -P 3306 -u username -p
+create database dbname;
+
+##Multi Az check##
+
+while true; do host <rds-endpoint-url>; sleep 1; done
+
+
